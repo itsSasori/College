@@ -12,5 +12,5 @@ def home(request):
 def menu(request):
     courses = Courses.objects.all()
     context={'courses':courses}
-    return render(request,'base.html',context)
+    return render(request,'base/menu.html',context)
 
